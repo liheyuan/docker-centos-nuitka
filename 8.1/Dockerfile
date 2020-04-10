@@ -4,7 +4,7 @@ RUN yum update -y
 
 RUN rpm --rebuilddb
 
-RUN yum install -y gcc gcc-c++ make python3 python3-devel chrpath
+RUN yum install -y gcc gcc-c++ make python3 python3-devel chrpath || true
 
 RUN yum clean all
 
