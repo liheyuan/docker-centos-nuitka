@@ -1,3 +1,5 @@
 #!/bin/bash
 
-docker run -e PUID=$(id -u) -e PGID=$(id -g) -v $(pwd):/app b4b63f45727a $@ 
+VERSION="7.2.1511"
+
+docker run -e PUID=$(id -u) -e PGID=$(id -g) -v $(pwd):/app coder4/docker-centos-nuitka:$VERSION $@ 

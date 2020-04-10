@@ -2,12 +2,11 @@ FROM centos:${DOCKER_TAG}
 
 RUN yum update -y
 
-RUN yum install -y gcc gcc-c++ make python3 python3-devel
+RUN yum install -y gcc gcc-c++ make python3 python3-devel chrpath
 
 RUN yum clean all
 
 RUN pip3 install nuitka
-RUN yum install -y chrpath
 
 ADD ./nuitka.sh /
 
