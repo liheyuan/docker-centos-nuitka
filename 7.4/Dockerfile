@@ -2,8 +2,6 @@ FROM centos:7.4.1708
 
 RUN yum update -y
 
-RUN rpm --rebuilddb
-
 RUN yum install -y gcc gcc-c++ make python3 python3-devel chrpath || true
 
 RUN yum clean all
