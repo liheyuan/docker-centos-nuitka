@@ -1,4 +1,4 @@
-FROM centos:${CENTOS_VERSION}
+FROM centos:7.2.1511
 
 RUN yum update -y
 
