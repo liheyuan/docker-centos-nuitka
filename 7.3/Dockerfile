@@ -8,7 +8,7 @@ RUN yum clean all
 
 RUN pip3 install nuitka
 
-ADD ../nuitka.sh /
+ADD ./nuitka.sh /
 
 RUN mkdir /app
 
