@@ -1,4 +1,4 @@
-FROM centos:${DOCKER_TAG}
+FROM centos:7.4.1708
 
 RUN yum update -y
 
@@ -8,7 +8,7 @@ RUN yum clean all
 
 RUN pip3 install nuitka
 
-ADD ./nuitka.sh /
+ADD ../nuitka.sh /
 
 RUN mkdir /app
 
