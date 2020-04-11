@@ -1,7 +1,5 @@
 FROM centos:7.3.1611
 
-RUN yum update -y
-
 RUN yum install -y gcc gcc-c++ make python3 python3-devel chrpath || true
 
 RUN yum clean all
